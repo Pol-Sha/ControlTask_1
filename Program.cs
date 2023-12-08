@@ -34,11 +34,12 @@ string[] findCountElements(string[] stringArray)
 void printArray(string[] stringArray)
 {
     Console.Write("[");
-    for (int i = 0; i < stringArray.Length; i++)
+    Console.Write($"''{stringArray[0]}'', ");
+    for (int i = 1; i < stringArray.Length; i++)
     {
-        Console.Write($"‘‘{stringArray[i]}’’, ");
+        Console.Write($"''{stringArray[i]}'', ");
     }
-
+    Console.Write($"''{stringArray[stringArray.Length - 1]}''");
     Console.Write("]");
 }
 GenerateArray(stringArray);
